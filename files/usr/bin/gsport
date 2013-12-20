@@ -1,0 +1,32 @@
+#!/bin/bash
+
+#
+# Install external ROM and HD image
+#
+if [ ! -e /usr/share/gsport/ROM ] ; then
+	wget http://mirrors.apple2.org.za/ftp.apple.asimov.net/emulators/rom_images/gsrom03.zip -O /tmp/gsrom3.zip
+	unzip /tmp/gsrom3.zip -x /tmp
+        sudo mv Rom03gd /usr/share/gsport/ROM
+fi
+if [ ! -d /usr/share/gsport/disks ] ; then
+	sudo mkdir /usr/share/gsport/disks
+fi
+if [ ! -e /usr/share/gsport/disks/GSport\ Internet\ Starter\ Kit.2mg ] ; then
+	wget http://www.mirrorservice.org/sites/download.sourceforge.net/pub/sourceforge/g/gs/gsport/Emulator%20Software%20Images/GSport_Internet_Starter_Kit.zip -O /tmp/GSport_Internet_Starter_Kit.zip
+	unzip /tmp/GSport_Internet_Starter_Kit.zip -d /tmp
+	sudo mv /tmp/GSport\ Internet\ Starter\ Kit/*.2mg /usr/share/gsport/disks
+	sudo mv /tmp/GSport\ Internet\ Starter\ Kit/GSport-readme.txt /usr/share/gsport/README
+	sudo mv /tmp/GSport\ Internet\ Starter\ Kit/*.pdf /usr/share/gsport/
+        sudo chgrp -R gsport /usr/share/gsport/disks
+        sudo chgrp gsport /usr/share/gsport/*
+fi
+
+if [[ ( $SSH_CLIENT || $REMOTEHOST ) && ! $DISPLAY ]]; then
+    echo "Please run GSport on the Raspberry Pi console, or in an X Window."
+else
+    if [[ $(xdpyinfo 2> /dev/null) ]]; then
+        gsportx
+    else
+        gsportfb
+    fi
+fi

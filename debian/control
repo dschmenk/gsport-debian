@@ -1,0 +1,17 @@
+Source: gsport
+Section: unknown
+Priority: extra
+Maintainer: David Schmenk <dschmenk@gmail.com>
+Build-Depends: debhelper (>= 8.0.0), libx11-dev (>= 2:1.5.0), libxext-dev (>= 2:1.3.1), libpcap-dev (>= 1.3.0)
+Standards-Version: 3.9.3
+Homepage: gsport.sourceforge.net
+#Vcs-Git: git://git.debian.org/collab-maint/gsport.git
+#Vcs-Browser: http://git.debian.org/?p=collab-maint/gsport.git;a=summary
+
+Package: gsport
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, xfonts-base (>= 1:1.0.3), libpcap0.8 (>= 1.3.0)
+Description: Apple IIgs emulator based on KEGS
+ GSport is a portable (in the programming sense) Apple IIgs emulator, based on
+ the KEGS cross-platform IIgs emulator by Kent Dickey. GSport brought to you
+ by David Schmidt, Glenn Jones, and Christopher Mason.

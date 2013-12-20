@@ -1,0 +1,22 @@
+gsport (0.3.0-11) unstable; urgency=low
+
+  * Split ROM and disk image handling out into gsport-extras
+  * Add gsport group
+  * Add suid bit to gsport* for Uthernet emulation
+  * Add two params to gsport command
+  * Add atributions
+  * improved gsport script from Ivan Drucker (combined gsport-extra functionality)
+
+ -- David Schmenk <dschmenk@apple2pie>  Tue, 03 Dec 2013 14:22:28 -0800
+
+gsport (0.3.0-2) unstable; urgency=low
+
+  * Fix grep for existing snd-pcm-oss in /etc/modules
+
+ -- David Schmenk <dschmenk@apple2pie>  Tue, 03 Dec 2013 14:21:53 -0800
+
+gsport (0.3.0-1) unstable; urgency=low
+
+  * Initial release (Closes: #nnnn)  <nnnn is the bug number of your ITP>
+
+ -- David Schmenk <dschmenk@apple2pie>  Mon, 02 Dec 2013 09:59:32 -0800

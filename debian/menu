@@ -1,0 +1,2 @@
+?package(gsport):needs="X11" section="Applications/Emulators"\
+  title="GSport" command="/usr/bin/gsport"

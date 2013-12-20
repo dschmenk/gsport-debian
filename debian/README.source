@@ -1,0 +1,8 @@
+gsport for Debian
+-----------------
+
+Override the default files from /usr/share/gsport by copying them to a local
+directory.  Read more on the official website http://gsport.sourceforge.net
+
+
+
