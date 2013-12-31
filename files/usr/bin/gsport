@@ -21,7 +21,7 @@ if [ ! -e /usr/share/gsport/disks/GSport\ Internet\ Starter\ Kit.2mg ] ; then
         sudo chgrp gsport /usr/share/gsport/*
 fi
 
-if [[ ( $SSH_CLIENT || $REMOTEHOST ) && ! $DISPLAY ]]; then
+if [[ ( $(tty | grep ttyUSB) || $(tty | grep ttyAMA) || $SSH_CLIENT || $REMOTEHOST ) && ! $DISPLAY ]]; then
     echo "Please run GSport on the Raspberry Pi console, or in an X Window."
 else
     if [[ $(xdpyinfo 2> /dev/null) ]]; then
