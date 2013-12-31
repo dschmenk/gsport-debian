@@ -1,4 +1,4 @@
-gsport (0.3.0-11) unstable; urgency=low
+gsport (0.3.0-12) unstable; urgency=low
 
   * Split ROM and disk image handling out into gsport-extras
   * Add gsport group
@@ -6,6 +6,7 @@ gsport (0.3.0-11) unstable; urgency=low
   * Add two params to gsport command
   * Add atributions
   * improved gsport script from Ivan Drucker (combined gsport-extra functionality)
+  * Fix toggle-status define for gsportx
 
  -- David Schmenk <dschmenk@apple2pie>  Tue, 03 Dec 2013 14:22:28 -0800
 
