@@ -1,3 +1,9 @@
+gsport (0.3.1-0) unstable; urgency=low
+
+  * Incorportate Peter Neubauer's AppleTalk code
+
+ -- David Schmenk <dschmenk@apple2pie>  Tue, 10 Jun 2014 09:22:28 -0800
+
 gsport (0.3.0-12) unstable; urgency=low
 
   * Split ROM and disk image handling out into gsport-extras
