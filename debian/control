@@ -10,7 +10,7 @@ Homepage: gsport.sourceforge.net
 
 Package: gsport
 Architecture: any
-Depends: ${shlibs:Depends}, ${misc:Depends}, xfonts-base (>= 1:1.0.3), libpcap0.8 (>= 1.3.0)
+Depends: ${shlibs:Depends}, ${misc:Depends}, xfonts-base (>= 1:1.0.3), libpcap-dev (>= 1.3.0)
 Description: Apple IIgs emulator based on KEGS
  GSport is a portable (in the programming sense) Apple IIgs emulator, based on
  the KEGS cross-platform IIgs emulator by Kent Dickey. GSport brought to you
