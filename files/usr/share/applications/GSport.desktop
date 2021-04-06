@@ -1,0 +1,9 @@
+[Desktop Entry]
+Type=Application
+Name=Apple II GS Emulator
+Comment=Run Apple II applications
+Icon=/usr/share/a2pi/a2pi.png
+Exec=gsport
+Terminal=false
+Categories=Game;Emulator;
+Keywords=Apple II GS Emulator;
