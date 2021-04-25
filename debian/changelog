@@ -1,3 +1,9 @@
+gsport (0.3.1-4) unstable; urgency=low
+
+  * Add GS port menu item
+
+ -- David Schmenk <dschmenk@gmail.com>  Sun, 25 Apr 2021 13:38:28 -0800
+
 gsport (0.3.1-3) unstable; urgency=low
 
   * Build for latest Raspbian (jessie)
